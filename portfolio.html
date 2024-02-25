@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    header, section, footer {
+      padding: 20px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: #333;
+      color: white;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      padding: 20px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      background-color: #555;
+      padding: 10px;
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .navigation a:hover {
+      background-color: #777;
+    }
+
+    .about, .projects, .contact {
+        margin: 20px 0;
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navigation {
+        display: block;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Siva Nagendram </h1>
+    <nav class="navigation">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <p>Add a brief introduction about yourself here.</p>
+  </section>
+
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <p>Details about your projects will be listed here.</p>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact Me</h2>
+    <p>Add your contact information here.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Siva Nagendram. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
